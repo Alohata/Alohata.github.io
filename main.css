@@ -1,12 +1,8 @@
-/*font-family: 'Open Sans Condensed', sans-serif;
-html {
-    background-color: #e6e9e9;
-}
-*/
+
 body {
     margin: 0 auto;
     padding: 0.1em 0em 3em;
-    max-width: 1280px;
+    max-width: 980px;
     color: #545454; 
     background-color: #ffffff;
 }    
@@ -84,8 +80,6 @@ p {
     line-height: 150%;
     /*padding-left: 10px;
     padding-right: 10px;*/
-    
- 
 }
 
 a {
@@ -96,10 +90,6 @@ a {
 a:hover {
     color: #a8b200;
 }
-
-/*a:visited {
-    color: #ffc600;
-}*/
 
 b, strong {
 font-weight: 700;
@@ -121,6 +111,4 @@ font-weight: 700;
     -webkit-transition: all 1s ease-in-out;
      float: left;
 margin: 0 50px 10px 0;
-
-
 }
