@@ -24,7 +24,7 @@ template = '<!DOCTYPE html>
     
             <div class="pageTitle"><b>ALOHA</b>ta</div>
 
-            <div class="imageTitle">Happy moments</div>
+            <div class="imageTitle">%{image_title}</div>
             
             <div class="wrapper" style="background-image: url(\'imgs/head_img.jpg\');"></div>
         </header>
@@ -56,6 +56,7 @@ template = '<!DOCTYPE html>
   
 translate_bg = {
     name: '', 
+    image_title: 'Щастливи моменти',
     title1: 'Безценни дни. Те всичките ухаят на море', 
     subtitle1: 'Прозрачна вода. Лъскави вълни',
     subtitle2: 'Северния бряг на Оаху, Хавай',
@@ -74,7 +75,8 @@ translate_bg = {
 }
 
 translate_en = {
-    name:'Aloha Desi', 
+    name:'Aloha Desi',
+    image_title: 'Happy moments',
     title1:'The precious days. They all smell like a sea.', 
     subtitle1: 'Transparent water. Glassy waves',
     subtitle2: 'North shore of Oahu, Hawaii',
@@ -91,10 +93,10 @@ translate_en = {
     more: 'Continue reading →',
 }
 
-templatebg=template % translate_bg
-templateen=template % translate_en
+template_bg=template % translate_bg
+template_en=template % translate_en
 
 
-File.write "test_bg.html", templatebg
-File.write "test_en.html", templateen
+File.write "test_bg.html", template_bg
+File.write "test_en.html", template_en
 
