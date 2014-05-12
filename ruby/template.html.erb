@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+            <meta charset="utf-8" />
+            <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+            <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+            <link href="http://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,400italic,500,700" rel="stylesheet" type="text/css">
+            <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+            <link href="../css/main.css" rel="stylesheet">
+            <title>Aloha Friday</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="languages">
+                <ul>
+                    <li><a href="../bg/index.html">bg</a></li>
+                    <li><a href="../en/index.html">en</a></li>
+                </ul>
+            </div>
+    
+            <div class="pageTitle"><b>ALOHA</b>ta</div>
+
+            <div class="imageTitle"><%= content[:image_title] %></div>
+            
+            <div class="wrapper" style="background-image: url(\'../imgs/head_img.jpg\');"></div>
+        </header>
+
+        <h1 class "name"> <%= content [:name] %></h1>
+        <h1><%= content [:title_1] %></h1>
+        <div class="column1">
+            <h4><% content [:subtitle_1] %></h4>
+
+               <% content [:block_1] %>
+                <p><a href="../en/index.html"><% content [:more] %></a></p>
+        </div>
+        
+        <div class="column2">
+            <h4><% content [:subtitle_2] %></h4>
+                
+                <% content [:block_2] %>
+                <p><a href="../en/index.html"><% content [:more] %></a></p>
+        </div>
+
+        <footer>
+            <div class="footImg">
+                <p>©  <strong>ALOHA</strong>ta  <img src="../imgs/a_flower.png"/></p>
+            </div>
+        </footer>
+
+    </body>
+  </html>

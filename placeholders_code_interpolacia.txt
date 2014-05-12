@@ -1,4 +1,0 @@
-string?:
-
-
-'hello %{a}' % {a:'world'}
