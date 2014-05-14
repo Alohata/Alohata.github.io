@@ -1,5 +1,8 @@
 #!/bin/env ruby
 # encoding: utf-8
+
+require 'erb'
+template = File.read('template.html.erb')
 all_translations = {
 	
 	'BG'=> {
@@ -42,12 +45,12 @@ all_translations = {
 	}
 
 
-all_translations.each do |name, translation| 
-	puts name
-	translation.each {|key, value| puts "the value of " + key.to_s + " is " + value}
+#all_translations.each do |name, translation| 
+#	puts name
+#	translation.each {|key, value| puts "the value of " + key.to_s + " is " + value}
 
-end
-
-#translations.each do |language, strings| 
-#    File.write "#{language}/index.html", template % strings
 #end
+
+all_translations.each do |language, translation| 
+    File.write "#{language}/index.html", template + translation
+end

@@ -21,25 +21,25 @@
     
             <div class="pageTitle"><b>ALOHA</b>ta</div>
 
-            <div class="imageTitle"><%= content[:image_title] %></div>
+            <div class="imageTitle"><%= strings[:image_title] %></div>
             
-            <div class="wrapper" style="background-image: url(\'../imgs/head_img.jpg\');"></div>
+            <div class="wrapper" style="background-image: url(../imgs/head_img.jpg);"></div>
         </header>
 
-        <h1 class "name"> <%= content [:name] %></h1>
-        <h1><%= content [:title_1] %></h1>
+        <h1 class "name"> <%= strings[:name] %></h1>
+        <h1><%= strings[:title_1] %></h1>
         <div class="column1">
-            <h4><% content [:subtitle_1] %></h4>
+            <h4><%= strings[:subtitle_1] %></h4>
 
-               <% content [:block_1] %>
-                <p><a href="../en/index.html"><% content [:more] %></a></p>
+               <%= strings[:block_1] %>
+                <p><a href="../en/index.html"><%= strings[:more] %></a></p>
         </div>
         
         <div class="column2">
-            <h4><% content [:subtitle_2] %></h4>
+            <h4><%= strings[:subtitle_2] %></h4>
                 
-                <% content [:block_2] %>
-                <p><a href="../en/index.html"><% content [:more] %></a></p>
+                <%= strings[:block_2] %>
+                <p><a href="../en/index.html"><%= strings[:more] %></a></p>
         </div>
 
         <footer>
